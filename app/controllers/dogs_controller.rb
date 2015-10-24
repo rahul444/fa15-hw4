@@ -9,7 +9,7 @@ class DogsController < ApplicationController
   end
 
   def create
-    @dog = Dog.create(user_params)
+    @dog = Dog.create(dog_params)
     if @dog.save 
       redirect_to @dog 
     else
